@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="Images/iconka_2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+
+    <title class="form__legend">Przelicznik walut</title>
+</head>
+
+<body class="form">
+    <form class="js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend"> Przelicznik walut </legend>
+            <p>
+                Wybierz walutę:
+            </p>
+            <p>
+                <label>
+                    <input class="js-choiceEURO" type="radio" name="choiceCurrency" value="EURO" checked>EURO
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="js-choiceUSD" type="radio" name="choiceCurrency" value="USD">DOLAR
+                    AMERYKAŃSKI
+                </label>
+
+            </p>
+            <p>
+                <label>
+                    <input class="js-choiceCHF" type="radio" name="choiceCurrency" value="CHF">FRANK
+                    SZWAJCARSKI
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input class="js-choiceSEK" type="radio" name="choiceCurrency" value="SEK">KORONA
+                    SZWEDZKA
+                </label>
+            </p>
+            <P>
+                <label>Wpisz kwotę PLN, za jaką chcesz kupić walutę:
+                    <input class="js-quantity" type="number" min="1" name="quantityCurrency" required
+                        placeholder="PLN"></label>
+            </P>
+            <p>
+                <label>Za podaną kwotę PLN kupisz: <strong class="js-result"></strong></label>
+            </p>
+
+            <p>
+                <button class="form__legend form__legend--button" type="submit">Oblicz koszt zakupu waluty</button>
+            </p>
+            <p>
+                <button type="reset">Wyczyść pola formularza</button>
+            </p>
+            <p class="text">
+                <a href="https://nbp.pl/statystyka-i-sprawozdawczosc/kursy/tabela-a/" target="_blank"> *Kurs sprzedaży
+                    walut z dnia
+                    14.07.2023 r.</a>
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
