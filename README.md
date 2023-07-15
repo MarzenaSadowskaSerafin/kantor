@@ -16,7 +16,7 @@ The converter show, how much you can currency buy.
 
 And that's all! 
 
-*Attention!* -> Exchange rate is of the day: **13.07.2023.**
+*Attention!* -> Exchange rate is of the day: **14.07.2023.**
 
 
 Use technologies for this site:
